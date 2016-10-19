@@ -10,26 +10,96 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="edu.byui.www.scripturereference.ScriptureReference">
 
-    <EditText
+    <TextView
+        android:text="Scripture Book"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="none"
-        android:text="Name"
-        android:ems="10"
         android:id="@+id/titleBook"
+        android:textSize="18sp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="none|text|textCapWords"
-        android:text="Name"
         android:ems="10"
         android:id="@+id/scriptureBook"
+        android:hint="Enter Scripture Book"
         android:layout_below="@+id/titleBook"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:hint="Enter Scripture Book" />
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Chapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleChapter"
+        android:layout_below="@+id/scriptureBook"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp"
+        android:textSize="18sp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:ems="10"
+        android:id="@+id/chapter"
+        android:hint="Enter Chapter"
+        android:layout_below="@+id/titleChapter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Verse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/titleVerse"
+        android:textSize="18sp"
+        android:layout_below="@+id/chapter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/verse"
+        android:textSize="18sp"
+        android:inputType="text"
+        android:hint="Enter Verse"
+        android:layout_below="@+id/titleVerse"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="Submit Favorite Scripture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verse"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonSubmit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/verse"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="88dp"
+        android:id="@+id/textFavoriteScripture"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Please enter a favorite scripture above. \n (i.e. James 1:5-6)" />
+
 </RelativeLayout>
